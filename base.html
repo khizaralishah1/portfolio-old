@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %} {% endblock title %}</title>
+        {% load static %}
+        {% block link %} {% endblock link %}
+        
+    </head>
+<body>
+    <!--<img class="backMainImg" src="backmain.jpg" width="100%"></img>-->
+    <img class="backImg" src={% static 'ma.jpg' %}>
+    {% block body %} {% endblock body %}
+</body>
+
+{% block script %} {% endblock script %}
+{% comment %} {% static 'scriptIndex.js' %} {% endcomment %}
+</html>
+
